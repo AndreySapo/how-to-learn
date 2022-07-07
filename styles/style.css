@@ -275,6 +275,7 @@
 .kaufman-table{
   margin: auto;
   position: relative;
+  z-index: 1;
 }
 /* и элемента с модификатором вида ключ-значение */
 .table__cell_theme_dark {
@@ -293,4 +294,5 @@
   position: absolute;
   top: 0;
   right: -210px;
+  z-index: 0;
 }
