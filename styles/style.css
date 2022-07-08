@@ -15,9 +15,9 @@
 }
 
 :root {
-  --bg-black: #1f1f1f;
-  --bg-grey: #f2f2f2;
-  --color-blue: #2f80ed;
+  --bg-dark: #1f1f1f;
+  --bg-light: #f2f2f2;
+  --link-default: #2f80ed;
   --text-black: #000;
 }
 
@@ -26,7 +26,7 @@
   min-height: 600px;
   max-height: 756px;
   position: relative;
-  background-color: var(--bg-grey);
+  background-color: var(--bg-light);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -46,18 +46,19 @@
 }
 
 .header__title {
+  margin: 0 0 0 64px;
   line-height: 96px;
   font-size: 102px;
   font-weight: 600;
   color: var(--text-black);
   width: 730px;
-  margin: 0;
   padding: 0;
-  margin-left: 64px;
   z-index: 3;
 }
 
 .header__subtitle {
+  margin: 0;
+  padding: 0;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -67,12 +68,10 @@
   bottom: 30px;
   left: 64px;
   z-index: 3;
-  margin: 0;
-  padding: 0;
 }
 
 .header__link {
-  color: var(--color-blue);
+  color: var(--link-default);
   text-decoration: none;
   z-index: 3;
 }
@@ -92,7 +91,7 @@
 .header__square-pic {
   width: 568px;
   height: 568px;
-  background-color: var(--color-blue);
+  background-color: var(--link-default);
   position: absolute;
   top: 64px;
   right: 0;
@@ -112,34 +111,31 @@
 }
 
 .two-columns__brief {
+  margin: 0;
+  padding: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  color: var(--color-blue);
+  color: var(--link-default);
   width: 175px;
 }
 
 .two-columns__main-text {
   width: 80%;
   min-width: 784px;
-  list-style: none;
-  margin: 0;
-  padding: 0;
 }
 
 .two-columns__paragraph {
-  margin-bottom: 30px;
-}
-
-.two-columns__paragraph:last-child {
-  margin-bottom: 0;
-}
-
-.two-columns__paragraph-text {
+  margin: 0 0 30px 0;
+  padding: 0;
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
   color: var(--text-black);
+}
+
+.two-columns__paragraph:last-child {
+  margin-bottom: 0;
 }
 
 .two-columns__span-accent {
@@ -217,6 +213,7 @@
 .feynman {
   height: 890px;
   background-image: url(../images/feynman.png);
+  background-color: var(--bg-light);
   background-repeat: no-repeat;
   background-size: 867px 637px;
   background-position: bottom left;
@@ -252,11 +249,11 @@
   top: 50%;
   right: 48px;
   text-decoration: none;
-  color: var(--color-blue);
+  color: var(--link-default);
 }
 
 .kaufman{
-  background-color: var(--bg-black);
+  background-color: var(--bg-dark);
   padding: 90px 0;
   position: relative;
   overflow: hidden;
@@ -300,7 +297,7 @@
 }
 
 .footer{
-  background-color: var(--bg-black);
+  background-color: var(--bg-dark);
   min-height: 350px;
   display: flex;
 }
