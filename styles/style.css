@@ -307,6 +307,10 @@
   justify-content: space-between;
 }
 
+.footer__column{
+  color: white;
+}
+
 .footer__column_content_copyright{
   flex-basis: 711px;
   display: flex;
@@ -319,7 +323,6 @@
 }
 
 .footer__author{
-  color: white;
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
@@ -327,7 +330,6 @@
 }
 
 .footer__column-heading{
-  color: white;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
