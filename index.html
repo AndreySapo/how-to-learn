@@ -169,61 +169,67 @@
 
     <footer class="footer">
       <section class="footer__columns">
-        <div class="footer__column_content_copyright">
-          <!-- Класс не соответствует БЭМ. Не хватает класса от которого образован модификатор
+        <div class="footer__column footer__column_content_copyright">
+          <!-- DONE Класс не соответствует БЭМ. Не хватает класса от которого образован модификатор
              Придерживайтесь схемы: block__element block__element_mod_value -->
           <div class="logo logo_place_footer"></div>
           <!-- DONE Согласно брифу это блок logo -->
-          <p class="footer-author margin-reset">&copy; Andrey Sapo</p>
-          <!--  footer-author  - это не самостоятельный блок. Согласно брифу здесь блок footer, элемент author. 
+          <p class="footer__author">&copy; Andrey Sapo</p>
+          <!-- DONE footer-author  - это не самостоятельный блок. Согласно брифу здесь блок footer, элемент author. 
                 Придерживайтесь схемы: block__element -->
         </div>
-        <div class="footer-column_content_info">
-          <!--  1) Нет класса, от которого образован модификатор.
+        <div class="footer__column footer__column_content_info">
+          <!-- DONE 1) Нет класса, от которого образован модификатор.
               Придерживайтесь схемы: block__element block__element_mod_value
               2) Название класса не соответствует брифу. -->
-          <h2 class="footer__column-heading margin-reset">О Практикуме</h2>
+          
           <!-- Необходимо соблюдать иерархию заголовков на странице.
                Подробнее:  https://www.w3.org/TR/html52/common-idioms-without-dedicated-elements.html#subheadings-subtitles-alternative-titles-and-taglines -->
-          <ul class="footer__column-links margin-reset">
-            <!-- Семантически верно использовать для навигации на сайте тег nav (в данном случае этим тегом необходимо обернуть список ul) -->
-            <li>
-              <a href="#" class="footer__column-link margin-reset">Главная</a>
-            </li>
-            <li>
-              <a href="#" class="footer__column-link">Концепция</a>
-            </li>
-            <li>
-              <a href="#" class="footer__column-link">Наставники</a>
-            </li>
-          </ul>
+          <nav>
+            <h3 class="footer__column-heading">О Практикуме</h3>
+            <ul class="footer__column-links">
+              <!-- DONE Семантически верно использовать для навигации на сайте тег nav (в данном случае этим тегом необходимо обернуть список ul) -->
+              <li>
+                <a href="#" class="footer__column-link">Главная</a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">Концепция</a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">Наставники</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <div class="footer-column_content_social">
-          <!--  1) Нет класса, от которого образован модификатор.
+        <div class="footer__column footer__column_content_social">
+          <!-- DONE 1) Нет класса, от которого образован модификатор.
               Придерживайтесь схемы: block__element block__element_mod_value
               2) Название класса не соответствует брифу. -->
-          <h2 class="footer__column-heading margin-reset">Соцсети</h2>
+          
           <!-- Необходимо соблюдать иерархию заголовков на странице. -->
-          <ul class="footer__column-links margin-reset">
-            <li>
-              <a href="#" class="footer__column-link margin-reset">
-                <img src="./images/facebook_color_white.svg" alt="Иконка Фейсбука" class="footer__social-icon">
-                Facebook
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer__column-link margin-reset">
-                <img src="./images/vk_color_white.svg" alt="Иконка ВКонтакте" class="footer__social-icon">
-                ВКонтакте
-              </a>
-            </li>
-            <li>
-              <a href="#" class="footer__column-link margin-reset">
-                <img src="./images/instagram_color_white.svg" alt="Иконка Инстаграм" class="footer__social-icon">
-                Instagram
-              </a>
-            </li>
-          </ul>
+          <nav>
+            <h3 class="footer__column-heading">Соцсети</h3>
+            <ul class="footer__column-links">
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img src="./images/facebook_color_white.svg" alt="Иконка Фейсбука" class="footer__social-icon">
+                  Facebook
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img src="./images/vk_color_white.svg" alt="Иконка ВКонтакте" class="footer__social-icon">
+                  ВКонтакте
+                </a>
+              </li>
+              <li>
+                <a href="#" class="footer__column-link">
+                  <img src="./images/instagram_color_white.svg" alt="Иконка Инстаграм" class="footer__social-icon">
+                  Instagram
+                </a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </section>
     </footer>
