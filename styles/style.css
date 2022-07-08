@@ -46,7 +46,7 @@
   font-size: 102px;
   font-weight: 600;
   color: var(--text-default);
-  width: 730px;
+  max-width: 730px;
   padding: 0;
   z-index: 2;
 }
@@ -58,7 +58,7 @@
   font-size: 18px;
   font-weight: normal;
   color: var(--text-default);
-  width: 388px;
+  max-width: 388px;
   position: absolute;
   bottom: 30px;
   left: 64px;
