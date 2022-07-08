@@ -13,13 +13,15 @@
   <div class="page">
     <header class="header">
 
-      <div class="header-logo logo_place_header"></div>
-      <!--  1) По брифу блок с логотипом необходимо назвать как logo
+      <div class="logo logo_place_header"></div>
+      <!--  DONE
+            1) По брифу блок с логотипом необходимо назвать как logo
             2) Модификаторы не могут использоваться вне своего блока. Но если исправить пункт 1 в соответствии с  брифом, то ошибка станет неактуальна. Придерживайтесь правила именования модификаторов: block block_mod_value -->
 
-      <h1 class="header__title margin-reset">Научиться учиться</h1>
-      <p class="header__subtitle margin-reset">
-      <!-- Отступы лучше сбрасывыть на уровне блока, поэтому возможно стоит отказаться от использования микса с классом margin-reset и сбрасывать margin и padding непосредственно для каждого блока отдельно. -->
+      <h1 class="header__title">Научиться учиться</h1>
+      <p class="header__subtitle">
+      <!-- DONE
+        Отступы лучше сбрасывыть на уровне блока, поэтому возможно стоит отказаться от использования микса с классом margin-reset и сбрасывать margin и padding непосредственно для каждого блока отдельно. -->
         Какие современные и эффективные подходы к обучению вы можете использовать в своей жизни? <a href="#"
           class="header__link">Узнать &rarr;</a>
       </p>
@@ -187,8 +189,8 @@
         <div class="footer__column_content_copyright">
         <!-- Класс не соответствует БЭМ. Не хватает класса от которого образован модификатор
              Придерживайтесь схемы: block__element block__element_mod_value -->
-          <div class="logo_place_footer footer-logo"></div>
-          <!-- Согласно брифу это блок logo -->
+          <div class="logo logo_place_footer"></div>
+          <!-- DONE Согласно брифу это блок logo -->
           <p class="footer-author margin-reset">&copy; Andrey Sapo</p>
           <!--  footer-author  - это не самостоятельный блок. Согласно брифу здесь блок footer, элемент author. 
                 Придерживайтесь схемы: block__element -->
