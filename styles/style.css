@@ -28,6 +28,7 @@
 }
 
 .logo{
+  /* В блоке должны быть только общие стили, а в модификаторах изменяющиеся стили. В данном случае строку с background-image нужно использовать в модификаторе logo_place_header. */
   background-image: url(../images/logo_place_header.svg);
   width: 228px;
   height: 32px;
@@ -222,6 +223,7 @@
   font-size: 120px;
   font-weight: 600;
   color: var(--text-default);
+  /* Ширину текста лучше не фиксировать через width, предпочтительнее использовать min-width */
   width: 648px;
   text-align: center;
 }
@@ -278,6 +280,7 @@
 .table__cell_theme_dark {
   width: 200px;
   color: white;
+  /* В модификаторах указываются только изменяющиеся стили. Строка margin-right: 0; лишняя, так как для элемента table__cell не задан margin-right, поэтому нет необходимости его добавлять в модификатор (по умолчанию он и так равен 0). */
   margin-right: 0;
   margin-top: 80px;
 }
@@ -357,5 +360,6 @@
 }
 
 .footer__social-icon{
+  /* Для иконки можно задать ширину (по брифу это 16px) и object-fit с подходящим значением (подробнее про это свойство https://webref.ru/css/object-fit). Если иконки соц. сетей изменятся и будут разного размера, то эти строки в стилях не дадут исказиться иконке и не сломают вёрстку.  */
   margin-right: 10px;
 }
