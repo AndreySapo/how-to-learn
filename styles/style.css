@@ -28,14 +28,15 @@
 }
 
 .logo{
-  /* В блоке должны быть только общие стили, а в модификаторах изменяющиеся стили. В данном случае строку с background-image нужно использовать в модификаторе logo_place_header. */
-  background-image: url(../images/logo_place_header.svg);
+  /* DONE
+  В блоке должны быть только общие стили, а в модификаторах изменяющиеся стили. В данном случае строку с background-image нужно использовать в модификаторе logo_place_header. */
   width: 228px;
   height: 32px;
   background-size: contain;
 }
 
 .logo_place_header {
+  background-image: url(../images/logo_place_header.svg);
   position: absolute;
   top: 30px;
   left: 64px;
@@ -223,8 +224,9 @@
   font-size: 120px;
   font-weight: 600;
   color: var(--text-default);
-  /* Ширину текста лучше не фиксировать через width, предпочтительнее использовать min-width */
-  width: 648px;
+  /* DONE
+  Ширину текста лучше не фиксировать через width, предпочтительнее использовать min-width */
+  min-width: 648px;
   text-align: center;
 }
 
@@ -281,7 +283,7 @@
   width: 200px;
   color: white;
   /* В модификаторах указываются только изменяющиеся стили. Строка margin-right: 0; лишняя, так как для элемента table__cell не задан margin-right, поэтому нет необходимости его добавлять в модификатор (по умолчанию он и так равен 0). */
-  margin-right: 0;
+  /* Убрал margin-right: 0; как и было указано в комментариях ревьювера, но либо указывайте, что изначальные стили style.css, данные в качестве примера, нужно изменять, либо уберите этот margin-right: 0; в изначальных стилях style.css*/
   margin-top: 80px;
 }
 
@@ -353,6 +355,7 @@
   font-weight: normal;
   text-decoration: none;
   display: flex;
+  align-items: center;
 }
 
 .footer__column-link:hover{
@@ -360,6 +363,9 @@
 }
 
 .footer__social-icon{
-  /* Для иконки можно задать ширину (по брифу это 16px) и object-fit с подходящим значением (подробнее про это свойство https://webref.ru/css/object-fit). Если иконки соц. сетей изменятся и будут разного размера, то эти строки в стилях не дадут исказиться иконке и не сломают вёрстку.  */
+  /* DONE
+  Для иконки можно задать ширину (по брифу это 16px) и object-fit с подходящим значением (подробнее про это свойство https://webref.ru/css/object-fit). Если иконки соц. сетей изменятся и будут разного размера, то эти строки в стилях не дадут исказиться иконке и не сломают вёрстку.  */
+  width: 16px;
+  object-fit: cover;
   margin-right: 10px;
 }
