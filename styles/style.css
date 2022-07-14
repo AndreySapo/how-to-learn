@@ -3,58 +3,15 @@
 @import url(../blocks/page/header/header.css);
 @import url(../blocks/page/logo/logo.css);
 
+@import url(../blocks/page/content/description/description.css);
+@import url(../blocks/page/content/two-columns/two-columns.css);
+
+
 :root {
   --bg-dark: #1f1f1f;
   --bg-light: #f2f2f2;
   --link-default: #2f80ed;
   --text-default: #000;
-}
-
-.description {
-  display: flex;
-  justify-content: center;
-  margin: 100px auto;
-}
-
-.two-columns {
-  width: 80%;
-  display: flex;
-  justify-content: space-between;
-}
-
-.two-columns__brief {
-  margin: 0;
-  padding: 0;
-  line-height: 1.2;
-  font-size: 18px;
-  font-weight: normal;
-  color: var(--link-default);
-  width: 175px;
-}
-
-.two-columns__main-text {
-  width: 80%;
-  min-width: 784px;
-}
-
-.two-columns__paragraph {
-  margin: 0 0 30px 0;
-  padding: 0;
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: normal;
-  color: var(--text-default);
-}
-
-.two-columns__paragraph:last-child {
-  margin-bottom: 0;
-}
-
-.two-columns__span-accent {
-  line-height: 34px;
-  font-size: 24px;
-  font-weight: 600;
-  color: var(--text-default);
 }
 
 .digits {
