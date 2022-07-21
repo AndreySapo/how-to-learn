@@ -17,6 +17,9 @@
 
 /* общие блоки */
 
+/* Анимация */
+@import url(../blocks/rotation/rotation.css);
+
 /* Стили блока cards */
 @import url(../blocks/cards/cards.css);
 @import url(../blocks/cards/__item/cards__item.css);
