@@ -6,8 +6,10 @@
   text-decoration: none;
   display: flex;
   align-items: center;
+  height: 100%;
 }
 
 .footer__column-link:hover{
-  text-decoration: underline;
+  opacity: .7;
+  transition: opacity .125s ease;
 }
