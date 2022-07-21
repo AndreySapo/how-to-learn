@@ -1,4 +1,4 @@
-.resourses__link {
+.resources__link {
   width: 270px;
   height: 38px;
   display: flex;
@@ -6,6 +6,6 @@
   transition: transform .275s ease;
 }
 
-.resourses__link:hover{
+.resources__link:hover{
   transform: scale(1.2);
 }
