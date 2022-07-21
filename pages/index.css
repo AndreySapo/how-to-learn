@@ -1,5 +1,11 @@
 @import url(../vendor/normalize.css);
 
+/* Стили страницы */
+@import url(../blocks/page/page.css);
+
+/* Переменные. Здесь конкретно - цвета фонов, ссылок и т.п. */
+@import url(../variables.css);
+
 /* Стили хэдера */
 @import url(../blocks/header/header.css);
 @import url(../blocks/header/__title/header__title.css);
@@ -110,21 +116,3 @@
 @import url(../blocks/footer/__column-links/footer__column-links.css);
 @import url(../blocks/footer/__column-link/footer__column-link.css);
 @import url(../blocks/footer/__social-icon/footer__social-icon.css);
-
-.page {
-  min-width: 1100px;
-  /* мы ещё не умеем делать мобильную версию сайта, */
-  /* поэтому выше установлена минимальная ширина страницы */
-  max-width: 1600px;
-  /* выше установили ограничение по максимальной ширине */
-  margin: 0 auto;
-  /* выше для экранов больше 1600px отцентрировали весь контент */
-  font-family: 'Helvetica Neue', Arial, sans-serif;
-}
-
-:root {
-  --bg-dark: #1f1f1f;
-  --bg-light: #f2f2f2;
-  --link-default: #2f80ed;
-  --text-default: #000;
-}
