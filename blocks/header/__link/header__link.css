@@ -2,9 +2,9 @@
   color: var(--link-default);
   text-decoration: none;
   z-index: 3;
+  transition: opacity .125s ease;
 }
 
 .header__link:hover {
   opacity: .7;
-  transition: opacity .125s ease;
 }
