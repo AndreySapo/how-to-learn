@@ -1,9 +1,11 @@
 .header__main-illustration {
+  /* раскомментировать, если нужно будет переделать img на div */
   /* background-image: url(../../../images/header-image.png); */
+  /* background-size: cover;
+  background-repeat: no-repeat; */
   width: 765px;
   height: 608px;
-  background-size: cover;
-  background-repeat: no-repeat;
+  object-fit: cover;
   position: absolute;
   bottom: 0;
   right: 0;
