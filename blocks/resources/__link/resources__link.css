@@ -3,9 +3,10 @@
   height: 38px;
   display: flex;
   justify-content: center;
-  transition: opacity .125s ease;
+  transition: opacity 0.125s ease;
+  cursor: pointer;
 }
 
-.resources__link:hover{
-  opacity: .5;
+.resources__link:hover {
+  opacity: 0.5;
 }
